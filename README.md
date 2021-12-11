@@ -3,7 +3,7 @@
 需要搭配复刻图标使用：https://github.com/royc01/notion-icon
 ![preview](https://raw.githubusercontent.com/royc01/notion-dark/main/preview.png)
 *********
-调整结构
+调整结构，与明亮版一致
 *********
 修正自定义图标
 修正边栏被压缩问题
