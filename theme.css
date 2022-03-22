@@ -198,7 +198,9 @@
 .pdf__resize {
     mix-blend-mode: darken;
 }
-
+body{
+	border: 0px!important;
+	}
 /* ------------------------顶栏------------------------ */
 
 .toolbar{
