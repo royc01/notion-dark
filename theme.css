@@ -97,17 +97,17 @@
     /* 自定义文字 */
 	--b3-font-color1: #FFF;
     --b3-font-color2: rgba(221, 222, 223);
-    --b3-font-color3: rgba(178, 180, 181);
-	--b3-font-color4: rgb(147, 114, 100);
-    --b3-font-color5: rgb(253, 162, 68);
-	--b3-font-color6: rgb(255, 184, 73);
-    --b3-font-color7: rgb(255, 220, 73);
-	--b3-font-color8: rgb(77, 171, 154);
-    --b3-font-color9: rgb(82, 178, 202);
-    --b3-font-color10: rgb(82, 156, 202);
-    --b3-font-color11: rgb(154, 109, 215);
-    --b3-font-color12: rgb(226, 85, 161);
-    --b3-font-color13: rgb(255, 115, 105);
+	--b3-font-color3: rgb(147, 114, 100);
+    --b3-font-color4: rgb(253, 162, 68);
+	--b3-font-color5: rgb(255, 184, 73);
+    --b3-font-color6: rgb(255, 220, 73);
+	--b3-font-color7: rgb(77, 171, 154);
+    --b3-font-color8: rgb(82, 178, 202);
+    --b3-font-color9: rgb(82, 156, 202);
+    --b3-font-color10: rgb(154, 109, 215);
+    --b3-font-color11: rgb(226, 85, 161);
+    --b3-font-color12: rgb(255, 115, 105);
+	--b3-font-color13: rgb(223, 84, 82);
     
 	--b3-font-background1: rgb(35, 38, 40);
     --b3-font-background2: rgb(63, 68, 71);
@@ -539,24 +539,28 @@ body{
 
 /* 分界线 */
 .layout__resize:after{
-   background-color:var(--surface-border-color);
-
+	background-color:var(--surface-border-color);
 }
 .layout__resize:hover:after{
-   background-color:var(--b3-scroll-color);
-   transition: background-color 300ms ease-in 0s;
+	background-color:var(--b3-scroll-color);
+	transition: background-color 300ms ease-in 0s;
 }
-
 .layout__resize--lr:after{
-	background-color: transparent;
+	background-color:var(--surface-border-color);
+	width:1px;
+	margin-left:-1px;
+	top: 0px;
+	height:100%;
+}
+.fn__flex-shrink+.layout__resize--lr:after{
+	background-color:transparent;
 	width:2px;
 	margin-left:-2px;
 }
 .layout__resize--lr:hover:after,.layout__resize--lr:active:after{
-	background-color: transparent;
-	transition: box-shadow 300ms ease-in 0s;
-	box-shadow: -2px 0px 0px 0px rgba(0, 0, 0 ,0.1) inset;
-	
+	width:2px;
+	background-color:var(--b3-scroll-color);
+	transition: background-color 300ms ease-in 0s;
 }
 /*标签树*/
 .sy__tag>.fn__flex-1>ul>.b3-list-item>.b3-list-item__graphic,
@@ -625,7 +629,7 @@ body{
 	border-radius: 0px;
 }
 .layout-tab-bar .item--focus {
-    box-shadow: 0px -3px 0px 0px rgba(255, 255, 255 ,0.2)  inset;
+    box-shadow: 0px -3px 0px 0px rgba(255, 255, 255 ,0.2)  inset!important;
 }
 .layout-tab-bar .item:hover {
 	background-color: var(--b3-column-surface)!important;
@@ -675,7 +679,7 @@ border-left:1px solid var(--b3-theme-on-background);
 }
 
 .protyle-breadcrumb>.block__icon:not(.ft__primary) svg{
-	color:rgba(55, 53, 47, 0.8);
+	color:var(--svg-theme-block-icon);
 	width:19px;
 	height:19px;
 	padding: 3px 1px;
@@ -852,7 +856,7 @@ border-left:1px solid var(--b3-theme-on-background);
 	color:var(--b3-theme-on-surface);
 }
 
-.protyle-background__img .protyle-icons>span:not(span[data-type='cancel']):not(span[data-type='confirm']):not(span[data-type='link']):not(span[data-type='random']):not(span[data-type='position']):not(span[data-type='remove']):not(span[aria-label='上传'])
+.protyle-background__img .protyle-icons>span:not(span[data-type='cancel']):not(span[data-type='confirm']):not(span[data-type='link']):not(span[data-type='random']):not(span[data-type='position']):not(span[data-type='remove']):not(span[style*="relative"])
 {
 	background-color:rgba(0, 0, 0, .5);
 	color:var(--b3-theme-background);
