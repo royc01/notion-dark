@@ -644,12 +644,6 @@ body{
 .sy__outline>.fn__flex-1>ul>li>.b3-list-item__toggle{
 	margin-left:1px;
 }
-.sy__tag>.fn__flex-1>ul ul,
-.sy__outline>.fn__flex-1>ul ul{
-	animation: slide-down 100ms ease-in-out;
-	transition:  .1s ease-in-out;
-	transform-origin: 50% 0;
-}
 /*大纲前圆点*/
 .sy__outline .b3-list-item__arrow.fn__hidden{
 	visibility:visible!important;
