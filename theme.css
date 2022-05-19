@@ -243,7 +243,7 @@ body{
 	border-radius: 0px;
 }
 .toolbar__item svg{
-	padding: 0 4px;
+	padding: 3px 8px;
 	height:12px;
 	width:12px;
 }
@@ -257,10 +257,10 @@ body{
 #minWindow svg, #restoreWindow svg, #maxWindow svg, #closeWindow svg{
 	width:10px!important;
 	color: var(--b3-theme-on-background);
-	padding: 0 8px;
- 
-					  
-				  
+	padding: 2px 8px;
+}
+.toolbar__item--close{
+	padding: 4px 8px;
 }
 #closeWindow:hover{
 	background-color:#e81123;
