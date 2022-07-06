@@ -192,10 +192,10 @@
 	--b3-dock-item-active-color: #eb8383;
 	--b3-dock-item-hover-background: transparent;
 	
-	--b3-dock-item-width: 35px;
-	--b3-dock-item-padding: 3px;
-	--b3-dock-item-margin: 17px 7px;
-	--b3-dock-item-radius: 0px;
+	--b3-dock-item-width: 36px;
+	--b3-dock-item-padding: 5px;
+	--b3-dock-item-margin: 7px 5px 7px 5px;
+	--b3-dock-item-radius: 5px;
 	/* 侧栏面板 */
 	--b3-fn__flex-column-background: rgba(55, 60, 63);
 	--b3-fn__flex-shrink-background: rgba(55, 60, 63);
@@ -1643,7 +1643,7 @@ padding:3px;
 .dock#dockLeft,
 .dock#dockRight{
 	padding-top:10px;
-	padding-bottom:30px;
+	padding-bottom:20px;
 }
 
 .layout#layouts .fn__flex-column>.fn__flex-1>.fn__flex>.layout-tab-container>.fn__flex-column{
@@ -1652,7 +1652,6 @@ padding:3px;
 .layout#layouts{
 	margin-bottom:-30px;
 }
-
 .status__counter:not(:empty){
 	border-radius:5px;
 	background-color:var(--b3-theme-primary);
