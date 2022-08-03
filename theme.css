@@ -8,6 +8,9 @@
 @import url(style/list2table.css);
 @import url(style/list2board.css);
 @import url(style/ctrlp.css);
+@import url(style/bq-callout.css);
+/* 引入网址链接前的图标相关代码 */
+@import url("style/link-icon.css");
 /* 自定义配置文件 */
 @import url(/widgets/custom.css);
 /*-------------------------------------------*/
@@ -73,7 +76,7 @@
 	--b3-scroll-color-hover: rgba(104,108,110);
 	--b3-scroll-bgcolor: rgba(61, 66, 69);
 
-	--b3-border-scroll: rgba(255, 255, 255, 0.2);									   
+	--b3-border-scroll: rgba(255, 255, 255, 0.2);
 	
 	--webkit-scrollbar: 6px;
 	--webkit-scrollbar-thumb: 4px;
@@ -127,6 +130,20 @@
     --b3-font-background11: rgb(68, 63, 87);
     --b3-font-background12: rgb(83, 59, 76);
     --b3-font-background13: rgb(89, 65, 65);
+	/*callout*/
+	--b3-bq-background1: rgb(35, 38, 40 , .3);
+    --b3-bq-background2: rgb(63, 68, 71 , .3);
+    --b3-bq-background3: rgb(69, 75, 78 , .3);
+    --b3-bq-background4: rgb(67, 64, 64 , .3);
+	--b3-bq-background5: rgb(89, 74, 58 , .3);
+    --b3-bq-background6: rgb(89, 79, 59 , .3);
+    --b3-bq-background7: rgb(89, 86, 59 , .3);
+	--b3-bq-background8: rgba(53, 76, 75 , .3);
+    --b3-bq-background9: rgb(54, 79, 84 , .3);
+    --b3-bq-background10: rgb(54, 73, 84 , .3);
+    --b3-bq-background11: rgb(68, 63, 87 , .3);
+    --b3-bq-background12: rgb(83, 59, 76 , .3);
+    --b3-bq-background13: rgb(89, 65, 65 , .3);
     /* 动画效果 */
     --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
     --b3-width-transition: width .15s cubic-bezier(0, 0, .2, 1) 0ms;
@@ -1227,15 +1244,6 @@ box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3p
 }
 .protyle-wysiwyg [data-node-id].li>.protyle-action--task:hover:after{
 	display:none;
-}
-/* 引述 */
-.protyle-wysiwyg .bq{
-    padding: 0.3em 1em;
-    color: var( --b3-theme-on-background);
-    border-left: 0.25em solid var(--b3-theme-on-background);
-	border-radius:0 3px 3px 0;
-	margin-left:4px;
-    background-color: var(--b3-bq-background);
 }
 /* 表格 */
 .b3-typography table, .protyle-wysiwyg table{
