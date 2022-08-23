@@ -748,7 +748,9 @@ input[type="checkbox" i] {
 .layout-tab-bar .item--pin{
 	margin-right:8px;
 	padding:0 2px 0 4px;
-	width:24px;
+}
+.layout-tab-bar .item__icon>img, .layout-tab-bar .item__icon>svg{
+	width: 24px;
 }
 .layout-tab-bar .item--pin .item__icon{
 	padding: 4px 0px;
@@ -1644,6 +1646,7 @@ div#historyContainer{
 }
 .protyle-content{
 	overflow: overlay;
+	z-index:2;
 }
 /* 动态加载和调节进度条*/
 .b3-slider{height:24px;}
@@ -1704,7 +1707,6 @@ padding:3px;
 	color:#fff;
 	padding-left:10px;
 	margin:0 5px 5px 5px;
-				   
 	opacity:0;
 	transition: opacity 300ms;
 	transition-delay: 3000ms;
@@ -1723,7 +1725,6 @@ padding:3px;
 	border-radius:5px;
 	background-color:var(--b3-status-msg-background);
 	margin:0 5px 5px 5px;
-				   
 	transition: max-width 300ms,opacity 300ms;
 	transition-delay: 2000ms;
 	position:relative;
