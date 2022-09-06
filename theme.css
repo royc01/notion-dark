@@ -716,7 +716,7 @@ input[type="checkbox" i] {
 .layout-tab-bar .item__icon svg{
 	height: 16px;
 }
-.layout-tab-bar .item:not(:last-child){
+.layout-tab-bar .item{
 	box-shadow:none!important;
 }
 .layout__wnd--active .layout-tab-bar .item--focus{
