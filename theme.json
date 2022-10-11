@@ -1,8 +1,8 @@
 {
   "name": "notion-dark",
   "author": "Roy",
-  "url": "https://github.com/royc01",
-  "version": "2.3.7",
+  "url": "https://github.com/royc01/notion-dark",
+  "version": "2.4.0",
   "modes": [
     "dark"
   ]
